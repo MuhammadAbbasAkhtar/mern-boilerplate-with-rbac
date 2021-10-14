@@ -150,4 +150,4 @@ To run this project, you will need to add the following environment variables to
 
 ### Feedback
 
-If you have any feedback, please reach out to me at m.abbas.akhtar@ampfolios.com
+If you have any feedback, please reach out to me at m.abbas.akhtar@hotmail.com
