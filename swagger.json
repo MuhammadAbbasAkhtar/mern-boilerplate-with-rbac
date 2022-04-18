@@ -8,7 +8,7 @@
     "produces": ["application/json"],
     "paths": {
         "/api/auth/register":{
-            "put":{
+            "post":{
                 "tags": ["Public - 4"],
                 "description": "User Registration",
                 "parameters": [

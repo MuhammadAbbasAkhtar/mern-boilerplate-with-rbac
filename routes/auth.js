@@ -7,7 +7,7 @@ const validate = require('../middlewares/validate');
 const jwt = require('../middlewares/jwt')
 
 
-router.put('/register', [
+router.post('/register', [
     check('email').isEmail().withMessage('Enter a valid email address'),
     check('password').not().isEmpty().isLength({min: 6}).withMessage('Must be at least 6 chars long'),
     check('firstName').not().isEmpty().withMessage('Your first name is required'),

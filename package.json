@@ -5,12 +5,14 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js | pino-colada ",
-    "dev": "concurrently  --kill-others-on-fail \"nodemon --trace-warnings server.js | pino-colada\" "
+    "app": "cd frontend && npm start",
+    "dev": "concurrently  --kill-others-on-fail \"npm run app\" \"nodemon --trace-warnings server.js | pino-colada\"  "
   },
   "dependencies": {
     "@sendgrid/mail": "^7.4.4",
     "bcrypt": "5.0.1",
     "body-parser": "^1.19.0",
+    "clsx": "^1.1.1",
     "cors": "2.8.5",
     "cryptr": "6.0.2",
     "dotenv": "^8.2.0",

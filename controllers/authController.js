@@ -176,7 +176,7 @@ const login = async (req, res) => {
         })
         .catch(err => {
             helper.prettyLog(err)
-            helper.log2File(err.message,'error')
+            helper.log2File(err.message,'error') 
             helper.sendResponse(res, {success: false, message: err.message} )
         })    
     } catch (error) {
